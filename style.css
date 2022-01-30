@@ -162,13 +162,16 @@ footer{
     padding: 20px;
     margin: 20px auto;
     text-align: center;
+    letter-spacing: 2px;
 }
-
 footer a{
-    text-decoration: underline;
     cursor: pointer;
+    color: orange;
 }
-
+footer a:hover{
+    text-decoration: underline;
+    color: red;
+}
 
 /* Responsive CSS Code */
 @media  all and (max-width: 1500px) {
@@ -199,6 +202,11 @@ footer a{
     }
 }
 
+@media screen and (max-width: 599px) {
+    footer{
+        line-height: 1.9;
+    }
+}
 @media all and (max-width: 400px) {
     .item-1 .main-heading{
         font-size: 1.3rem;
