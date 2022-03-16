@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* font-family: 'Karla', sans-serif; */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* Body Design CSS Code */
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 110px auto;
+  padding: 25px;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  background: #e5eff5;
+}
+
+/* Grid Container CSS Code  */
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(0px, auto);
+  grid-auto-columns: minmax(0px, auto);
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 2px;
+}
+
+/* Inner Grid Item-Box CSS Code  */
+.item {
+  padding: 35px;
+}
+
+/* Inner Grid Card Class Item CSS Code  */
+#card-1 {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  background: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#card-2 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  background: #2ab2af;
+  border-bottom-left-radius: 8px;
+}
+
+#card-3 {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  background: #2ab2af;
+  opacity: 0.8;
+  border-bottom-right-radius: 8px;
+}
+
+/* Item-1 CSS Code */
+.item-1 p {
+  color: #98a6bd;
+  line-height: 1.5;
+  position: relative;
+  font-weight: 600;
+  top: -5px;
+}
+
+.main-heading {
+  font-size: 1.5rem;
+  color: #2ab2af;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: #c0df34;
+}
+
+/* Item-2 CSS Code */
+.item-2 h3 {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.item-2 p {
+  color: white;
+  opacity: 0.9;
+  position: relative;
+  top: -10px;
+}
+
+.item-2 button {
+  padding: 15px;
+  width: 100%;
+  max-width: 210px;
+  background: #c0df34;
+  color: white;
+  border-radius: 6px;
+  border: transparent;
+  outline: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.item-2 button:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: black;
+  background: peachpuff;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  opacity: 0.7;
+  top: -5px;
+  left: -5px;
+  position: relative;
+}
+
+/* Item-3 CSS Code */
+.item-3 h3 {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.item-3 p {
+  font-size: 0.85rem;
+  color: white;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+/* Footer Design CSS COde */
+footer {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 20px;
+  margin: 5rem auto;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+footer a {
+  cursor: pointer;
+  color: green;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* Responsive CSS Code */
+@media all and (max-width: 1500px) {
+  body {
+    width: auto;
+    max-width: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
+
+@media all and (max-width: 658px) {
+  body {
+    padding: 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: auto;
+  }
+  #card-2 {
+    border-bottom-left-radius: 0px;
+    grid-column-end: 3;
+  }
+  #card-3 {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  footer {
+    line-height: 1.9;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .item-1 p {
+    font-size: 14px;
+    line-height: 2;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .main-heading {
+    font-size: 1.3rem;
+  }
+  .sub-heading {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
